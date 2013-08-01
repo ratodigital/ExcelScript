@@ -1,14 +1,14 @@
 import com.ratodigital.excelscript.util.Arquivo
 import com.ratodigital.excelscript.util.Excel
 
-Planilhas bsoft = new Planilhas(DIR_ENTRADA, DIR_SAIDA, EXT, SAIDA)
+Planilhas planilhas = new Planilhas(DIR_ENTRADA, DIR_SAIDA, EXT, SAIDA)
 
-bsoft.cpagar("cpagar")
-bsoft.creceber("creceber")
-bsoft.manifesto("manifesto")
-bsoft.ctrc("ctrc")
-bsoft.manifestoCtrc("manifestoctrc")
-bsoft.juntaTudo("zoho")
+planilhas.cpagar("cpagar")
+planilhas.creceber("creceber")
+planilhas.manifesto("manifesto")
+planilhas.ctrc("ctrc")
+planilhas.manifestoCtrc("manifestoctrc")
+planilhas.juntaTudo("zoho")
 		
 	
 class Planilhas {
