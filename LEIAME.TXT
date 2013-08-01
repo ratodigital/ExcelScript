@@ -1,0 +1,43 @@
+EXCEL SCRIPT
+------------
+Programa utilizado pela Normando Transportes para
+leitura das planilhas exportadas pelo sistema da BSoft
+e preparação para importação para o Zoho Reports.
+
+FONTE
+-----
+O código fonte é um projeto Java/Eclipse comum. 
+
+Para gerar um novo excelscript.jar na pasta target, 
+menu File / Export / Runnable JAR file
+
+EXECUTÁVEL
+----------
+O zoho.jar pode ser executado diretamente pela
+linha de comando, na forma:
+
+java -jar excelscript.jar <script.groovy> <diretorio_origem> <diretorio_destino>
+
+OBS: Os diretórios origem e destino devem sempre terminar com uma 
+     barra normal (sistema Linux) ou invertida (sistema Windows).
+     
+Outra alternativa é executa-los através de um script excelscript.sh (Linux)
+ou excelscript.bat (Windows)
+
+EXEMPLOS
+--------
+
+Na pasta sample/normando tem as planilhas utilizadas no código-fonte do Zoho.
+
+Na pasta sample/normando/script.groovy tem as regras de transformação das planilhas.
+     
+As planilhas transformadas são colocadas em sample/normando/saida.
+
+Em sample/normando/saida/zoho foi criada uma única planilha zoho.xls
+contendo todas as outras planilhas transformadas, uma em cada pasta.
+
+AUTOR
+-----
+serge@ratodigital.com
+www.ratodigital.com
+julho/2013
