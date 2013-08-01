@@ -1,7 +1,9 @@
 ExcelScript
 ===========
 
-Este é um projeto Java/Eclipse comum (sem Maven) que serve para leitura e manipulação de planilhas Excel.
+Este é um projeto Java/Eclipse comum (sem Maven) que serve para leitura e manipulação de planilhas Excel. 
+
+Nos bastidores, o projeto usa a simples e direta [Java Excel API](http://jexcelapi.sourceforge.net).
 
 A melhor forma de entender seu funcionamento é executando o [target/excelscript.sh](https://github.com/ratodigital/ExcelScript/blob/master/target/excelscript.sh) (ou .bat, se estiver no windows). 
 São realizadas várias transformações nas planilhas localizadas na pasta */sample*
@@ -59,3 +61,5 @@ Abaixo um trecho, para ilustrar o potencial da linguagem.
 	    }
     }
 ```
+
+Eu pensei em criar uma DSL mais fácil, mas cadê tempo? Quem tiver a fim de colaborar, fica à vontade!
