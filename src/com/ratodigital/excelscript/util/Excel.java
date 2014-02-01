@@ -45,18 +45,23 @@ public class Excel {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			System.out.println("ERRO: Arquivo de entrada " + entrada
-					+ " não encontrado!");
+					+ " n�o encontrado!");
 		}
 		return null;
 	}
 
 	public Excel excluirUltimaLinha() {
-		System.out.println("Removendo última linha: " + getTotalLinhas());
+		System.out.println("Removendo ultima linha");
 		sheet.removeRow(getTotalLinhas());
-
 		return this;
 	}
 
+	public Excel excluirLinha(int linha) {
+		System.out.println("Removendo linha " + linha);
+		sheet.removeRow(linha);
+		return this;
+	}
+	
 	public Excel inserirColuna(int coluna, String titulo) {
 		System.out.println("Inserindo coluna " + coluna + ": " + titulo);
 		sheet.insertColumn(coluna);
@@ -111,7 +116,7 @@ public class Excel {
 	
 	public Excel salvarEFechar() {
 		System.out
-				.println("Arquivo de saída " + saida + " gerado com sucesso!");
+				.println("Arquivo de saida " + saida + " gerado com sucesso!");
 		try {
 			out.write();
 			out.close();

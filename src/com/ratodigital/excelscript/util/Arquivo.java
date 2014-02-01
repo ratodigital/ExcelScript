@@ -12,7 +12,7 @@ public class Arquivo {
 		File dir = new File(diretorio);
 
 		if (!dir.exists()) {
-			System.out.println("Criando pasta: " + diretorio);
+			//System.out.println("Criando pasta: " + diretorio);
 			dir.mkdir();
 		}
 	}

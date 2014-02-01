@@ -24,9 +24,9 @@ public class ExcelScript {
 	public static void main(String[] args) {
 		if (args.length != 3) {
 			System.out.println("USO: java -jar bittle.jar <SCRIPT.groovy> <DIR_ENTRADA> <DIR_SAIDA>" + args.length);
-			System.out.println("     SCRIPT      - caminho e nome do arquivo do script, com extensão .groovy");
+			System.out.println("     SCRIPT      - caminho e nome do arquivo do script, com extens�o .groovy");
 			System.out.println("     DIR_ENTRADA - caminho das planilhas de origem.");
-			System.out.println("     DIR_SAIDA   - caminho das planilhas de saída.");
+			System.out.println("     DIR_SAIDA   - caminho das planilhas de saida.");
 			System.exit(0);
 		}
 
@@ -37,8 +37,8 @@ public class ExcelScript {
 		Arquivo.criaDiretorio(DIR_SAIDA);
 
 		System.out.println("Executando script   : " + script);
-		System.out.println("Diretório de entrada: " + DIR_ENTRADA);
-		System.out.println("Diretório de saída  : " + DIR_SAIDA);
+		System.out.println("Diretorio de entrada: " + DIR_ENTRADA);
+		System.out.println("Diretorio de saida  : " + DIR_SAIDA);
 
 		run(script);
 	}
